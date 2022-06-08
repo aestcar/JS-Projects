@@ -1,0 +1,50 @@
+*
+{
+	padding:0px;
+	margin:0px;
+}
+
+body{
+	background-color: #14213d;
+}
+
+p{
+	font-size: 30px;
+	font-weight: 80px;
+	color: #ffffff;
+    text-align: center;
+}
+
+h1{
+	font-size: 40px;
+	margin-top:20px;
+	text-align: center;
+	color: #fca311;
+}
+
+h2{
+	font-size: 30px;
+	margin-top:20px;
+	text-align: center;
+	color: #fca311;
+}
+
+.tabla{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bloque:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+
+
