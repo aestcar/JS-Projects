@@ -1,0 +1,406 @@
+@font-face {
+	font-family: laila;
+	src: url(./fonts/Laila-Bold.ttf);
+}
+
+@font-face {
+	font-family: openSans;
+	src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+*
+{
+	padding:0px;
+	margin:0px;
+	font-family: sans-serif;
+}
+
+br{
+		display: block;
+		margin-bottom: 0em;
+}
+
+#portada{
+	background-image: url('./img/fondo.png');
+	background-size: cover;
+}
+
+#portada2{
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.81) 0%, rgba(72, 72, 72, 0) 41.25%, rgba(158, 158, 158, 0) 87.6%, #FFFFFF 95.42%);
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+
+#textoTit{
+	cursor: pointer;
+	font-family: laila;
+	margin-left: 80px;
+	margin-top: 32px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+#textoTitPart2{
+	font-family: laila;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.menuCentral{
+	display: flex;
+	gap: 40px;
+	margin-top: 58px;
+	font-weight: 300px;
+	font-size: 19px;
+}
+
+.menuCentral > p{
+	cursor: pointer;
+}
+
+i{
+	cursor: pointer;
+}
+
+.menuDer{
+	display: flex;
+	gap: 15px;
+	margin-right: 80px;
+	margin-top: 58px;
+}
+
+#botonStar{
+	color: #FF7A00;
+	background-color: transparent;
+	border: none;
+}
+
+#botonPersona{
+	color: white;
+	background-color: transparent;
+	border: none;
+}
+
+.menuCentralPs{
+	color: white;
+}
+
+/* ------------------------------------------PRIMERA PARTE------------------------------------------------------------------  */
+
+h2{
+	color: white;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 50px;
+	line-height: 102px;
+	text-align: center;
+	line-height: 1.5;
+	margin-top: 230px;
+}
+
+h2 span::before {
+	content: "\A";
+	white-space: pre;
+}
+
+h4{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 46px;
+}
+
+#botonDescubir{
+	color: white;
+	background-color: #00A651;
+	border-radius: 10px;
+	font-size: 18px;
+	padding: 11px 22px 12px 20px;
+	text-align: center;
+	border: none;
+	margin-bottom: 200px;
+	cursor: pointer;
+}
+
+#divBoton{
+	display: flex;
+	justify-content: center;
+}
+
+/* ------------------------------------------SEGUNDA PARTE------------------------------------------------------------------  */
+
+.negrita{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+#menuServicios{
+	display: flex;
+	gap: 50px;
+	margin-right: 100px;
+	margin-left: 100px;
+	margin-bottom: 60px;
+}
+
+.classMenu{
+	font-size: 24px;
+}
+
+.titleMenu{
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 18px;
+}
+
+.descMenu{
+	font-size: 13px;
+}
+
+#ticket{
+	color: #32DF8F;
+	margin-bottom: 30px;
+}
+
+#casa{
+	color: #00B8E0;
+	margin-bottom: 30px;
+}
+
+#send{
+	transform: rotate(320deg);
+	color: #E48B78;
+	margin-bottom: 30px;
+}
+
+.ticketBooking{
+	padding: 20px;
+
+	background: #F9F9F9;
+	border-radius: 15px;
+}
+
+#hotelBooking{
+	padding: 20px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+	border-radius: 15px;
+}
+
+/* ------------------------------------------TERCERA PARTE------------------------------------------------------------------  */
+
+#terceraParte{
+	background-color:  #0058530D;
+	background-image: url('./img/mapa.png');
+	background-repeat: no-repeat;
+	opacity: 0.75;
+	background-size: 80%;
+	background-position: center;
+	padding-bottom: 40px;
+}
+
+#terceraParte > p{
+	text-align: center;
+}
+
+#terceraParte > p > span::before, #terceraParte > div > div > p > span::before{
+	content: "\A";
+	white-space: pre;
+}
+
+#tituloTer{
+	padding-top: 60px;
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#descTer{
+	font-size: 13px;
+	margin-bottom: 80px;
+}
+
+.cajitas{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 90px;
+}
+
+.cajita{
+	background-color: #FFFFFF;
+	border-radius: 15px;
+	height: 120px;
+	width: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.titleMenuTer{
+	margin-top: 20px;
+	margin-bottom: 10p;
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.descMenuTer{
+	text-align: center;
+}
+
+/* ------------------------------------------CUARTA PARTE------------------------------------------------------------------  */
+
+#cuartaParte{
+	background-color: white;
+}
+
+#tituloCuartaParte, #tituloQuintaParte{
+	font-size: 27px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+#cuartaParteMaps{
+	display: flex;
+}
+
+#cuartaParteMapsCol{
+	width: 50%;
+}
+
+#cuartaParteMapsCol > img{
+	object-fit: contain;
+}
+
+#cuartaParteMapsCol2{
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.lugares{
+	border-width: 100px;
+	margin-left: 30px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+}
+
+.lugares > img{
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 33%;
+	height: 120px;
+}
+
+.nombreLug{
+	font-weight: 600;
+}
+
+/* ------------------------------------------QUINTA PARTE------------------------------------------------------------------  */
+
+#quintaParte{
+	background-color: #ECF1F0;
+}
+
+#tituloQuintaParte{
+	font-size: 27px;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 50px;
+}
+
+#menuQuintaParte{
+	display: flex;
+	justify-content: center;
+	gap: 70px;
+	align-items: center;
+}
+
+.botonGris{
+	background-color: #666666;
+	padding: 13px 20px 13px 20px;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#botonVerde{
+	background-color: #00A651;
+	padding: 13px 20px 13px 20px;
+	color: white;
+	border-radius: 10px;
+}
+
+#opcionesQuintaParte{
+	display: flex;
+	margin-left: 10px;
+	margin-right: 10px;
+	justify-content: space-between;
+	gap: 20px;
+	margin-top: 50px;
+}
+
+#opcionesQuintaParte > div{
+	width: 30%;
+	background-color: white;
+	border-radius: 15px;
+}
+
+#opcionesQuintaParte > div > img{
+	height: 65%;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+p > span::before{
+	content: "\A";
+	white-space: pre;
+}
+
+.wrapperOpcion{
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapperOpciones1, .wrapperOpciones2{
+	display: flex;
+	justify-content:space-between;
+}
+
+.wrapperOpcion > p , .wrapperOpciones1 > p, .wrapperOpciones2 > div, .wrapperOpciones2 > p{
+	padding: 10px;
+}
+
+.wrapperLocation{
+	display: flex;
+	align-items: center;
+}
+
+.wrapperOpciones2 > p{
+	text-decoration: underline;
+}
+
+.saber{
+	display: flex;
+	align-items: flex-end;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.opcionTexto{
+	font-size: 14px;
+}
