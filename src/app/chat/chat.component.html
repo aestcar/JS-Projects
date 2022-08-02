@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+
+    <ion-toolbar>
+  
+      <ion-title>
+  
+        <div class="divTitulo">
+          <p class="titulo">Que Pasapp!</p>
+          <ion-icon name="exit-outline" (click)="clickSalir()"></ion-icon>
+        </div>
+  
+      </ion-title>
+  
+    </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-infinite-scroll position="top" threshold="100px" (ionInfinite)="loadData($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Cargando más mensajes...">  
+
+      <ion-button (click)="loadData($event)">Cargar más mensajes</ion-button>
+
+      <div class="scroll">
+        <ul  class="bloqueMensajes"> 
+          <li *ngFor="let msg of mensajes | async"> 
+
+            <div class="msgUser" *ngIf="msg.user == currentUser && !msg.imgPath">
+              <p>{{msg.text}}</p>
+            </div>
+
+            <div class="msgOtro" *ngIf="msg.user != currentUser && !msg.imgPath">
+              <p class="nombre">{{msg.user}}</p>
+              <p class="texto">{{msg.text}}</p>
+              <p class="localizacion">{{msg.city}}</p>
+            </div>
+
+            <div class="fotoUser" *ngIf="msg.user == currentUser && msg.imgPath">
+              <img class="imgChat" *ngIf="msg.imgPath" alt="Imagen Que Passap" src='{{msg.imgPath}}'>
+            </div>
+
+            <div class="fotoOtro" *ngIf="msg.user != currentUser && msg.imgPath">
+              <img class="imgChat" *ngIf="msg.imgPath" alt="Imagen Que Passap" src='{{msg.imgPath}}'>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content> 
+
+<router-outlet></router-outlet>
+
+<ion-footer>
+  <div>
+      <ion-button class="botonCam" (click)="clickCamera()">
+        <ion-icon name="camera" (click)="clickCamera()"></ion-icon>
+      </ion-button>
+      <input id="input" type="text" [formControl]="messageInput" [(ngModel)]="cuerpoMsg">
+      <ion-button (click)="clickSendMessage()">
+        <ion-icon name="send" (click)="clickSendMessage()"></ion-icon>
+      </ion-button>
+    </div>
+</ion-footer>

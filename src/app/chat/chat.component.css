@@ -1,0 +1,109 @@
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+ion-infinite-scroll-content{
+    text-align: left;
+}
+
+ion-grid,
+ion-row {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+/* Header */
+
+.titulo{
+    flex: 80%;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+ion-icon{
+    font-size: 1.5em;
+}
+
+.divTitulo{
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    margin-left: 0px;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: auto;
+}
+
+li:not(:last-child) { 
+    margin-bottom: 10px;  
+} 
+
+.msgUser{
+    display: block;
+    float: right;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+.msgOtro{
+    display: block;
+    float: left;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1cd5ca;
+}
+
+.fotoOtro > .imgChat{
+    width: 40%;
+    float: left;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #1cd5ca;
+}
+
+.fotoUser > .imgChat{
+    width: 40%;
+    float: right;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+.nombre{
+    font-weight: 600;
+}
+
+.localizacion{
+    font-size: 7px;
+}
+
+ion-footer > div{
+    display: flex;
+    align-items: center;
+}
+
+ion-footer > div > input{
+    flex: 80%;
+}
+
+ion-button{
+    --ion-color-btn: #ff66c4;
+    --background: var(--ion-color-btn);
+}
+
+ion-footer > div > ion-button{
+    flex: 20%;
+}

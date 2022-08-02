@@ -1,0 +1,47 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.quitarFlex{
+    flex: 0 0 100%;
+}
+
+.titulo{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+span::before{
+    content: "\A";
+	white-space: pre;
+}
+
+img{
+    width: 80%;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #4C8BF5;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+/* Header */
+ion-title > p{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 25px;
+}
