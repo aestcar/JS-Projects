@@ -1,0 +1,25 @@
+<div class="quitarFlex">
+
+    <ion-header [translucent]="true">
+
+        <ion-toolbar>
+      
+          <ion-title>
+      
+            <p>Que Pasapp!</p>
+      
+          </ion-title>
+      
+        </ion-toolbar>
+      
+    </ion-header>
+
+    <p class="titulo">Bienvenido a <span> Que Passap! </span> </p>
+    
+    <img id="principal" src="./assets/images/people.png" alt="Personas chateando con QuePassap">
+    <div class="boton">
+        <button (click)="onClick()">LOGIN CON GOOGLE</button>
+        <app-chat></app-chat>
+    </div>
+    <router-outlet></router-outlet>
+</div>
